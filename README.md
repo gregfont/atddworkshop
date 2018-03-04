@@ -1,7 +1,7 @@
 # ATDD Workshop
 This is the code base for an ATDD training workshop.
 
-Code is in PHP. The testing framework used is Behat.
+The code is in PHP. The testing framework used is Behat. The example used is the pricing feature of a pizza delivery service.
 
 - "start" branch contains starting code for the workshop 
 - Below you will find the various steps of the workshop for going from start to finish, discovering the subtleties of ATDD done well progressively.
