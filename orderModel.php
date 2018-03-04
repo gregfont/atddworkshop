@@ -26,17 +26,8 @@ require_once 'Model.php';
             return $pizzas;
         }
 		
-		public function calculateOrder($pizza, $quantity, $ward, $discount)
+		public function calculateOrder($pizza, $quantity)
 		{
-			$price= $pizza * $quantity;
-			
-			$cheapWards = array("Shinjuku","Shibuya","Minato","Chuo","Chiyoda");
-			if (in_array($ward,$cheapWards))
-					$price = $price *0.9;
-			
-			if ($discount=="PARTY" && $quantity>=10)
-					$price = $price *0.8;
-				
-			return $price;
+			return "TO DO";
 		}
     }

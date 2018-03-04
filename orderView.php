@@ -34,12 +34,6 @@
             <?php } ?>
             </select> x
             <input type="text" name="quantity" size="2"><br />
-            Discount: <input type="text" name="discount" size="3"><br />
-            Ward: <select name="ward">
-            <?php foreach($this->view['wards'] as $ward){ ?>
-                <option value="<?php echo $ward; ?>"><?php echo $ward; ?></option>
-            <?php } ?>
-            </select><br />
             <input type="submit" value="Order" class="button">
         </form>
     <?php endif; ?>

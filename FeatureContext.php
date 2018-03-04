@@ -24,25 +24,4 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
     public function __construct()
     {
     }
-
-	 /**
-     * @When /^(?:|I )order "(?P<quantity>(?:[^"]|\\")*)" x "(?P<pizza>(?:[^"]|\\")*)" for the "(?P<ward>(?:[^"]|\\")*)" ward with discount code "(?P<discount>(?:[^"]|\\")*)"$/
-     */
-    public function orderQuotation($quantity, $pizza, $ward, $discount)
-    {
-        $this->selectOption("pizza", $pizza);
-        $this->fillField("quantity", $quantity);
-        $this->fillField("discount", $discount);
-        $this->selectOption("ward", $ward);
-		$this->pressButton("Order");
-    }
-
-	 /**
-     * @Then /^(?:|I )should pay "(?P<price>(?:[^"]|\\")*)"$/
-     */
-    public function shouldPay($price)
-    {
-        $this->assertElementContainsText("#price", $price);
-    }
-
 }

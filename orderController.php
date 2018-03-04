@@ -12,9 +12,9 @@ class OrderController
         $this->order = new orderModel();
     }
 
-    public function showOrder($pizza, $quantity, $ward, $discount)
+    public function showOrder($pizza, $quantity)
     {
-        $this->view['price'] = $this->order->calculateOrder($pizza, $quantity, $ward, $discount);
+        $this->view['price'] = $this->order->calculateOrder($pizza, $quantity);
         $this->display();
     }
 
