@@ -3,9 +3,9 @@ This is the code base for an ATDD training workshop.
 
 Code is in PHP. The testing framework used is Behat.
 
-- "TODO" branch contains starting code for the workshop 
-- Below you will find the various steps of the workshop
-- master branch contains final code
+- "start" branch contains starting code for the workshop 
+- Below you will find the various steps of the workshop for going from start to finish, discovering the subtleties of ATDD done well progressively.
+- "master" branch contains final code
 
 # How to replicate this tutorial...
 1. Setup your web dev env
@@ -16,4 +16,4 @@ Code is in PHP. The testing framework used is Behat.
 
 
 # Workshop steps
-TODO
+TO DO
