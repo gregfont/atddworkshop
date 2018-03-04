@@ -1,0 +1,11 @@
+default:
+  extensions:
+    Behat\MinkExtension:
+      base_url: http://localhost/ATDD/order.php
+      goutte: ~
+  autoload:
+    '': D:\Behat\vendor\bin\feature\bootstrap
+  suites:
+    default:
+        paths:
+            - D:\Behat\vendor\bin\feature
